@@ -1,23 +1,29 @@
-# 🔴 Pokepy
+# 👾 Pokepy
 ---
 
 This is a simple, yet complete, full-stack web application built in **Flask/Python** that demonstrates all the **CRUD** (Create, Read, Update, Delete) operations, integrated with **PokeAPI** (a RESTful API) and a secure **Login/Register system** designed with industry best practices.
+
 
 ## 🚀 Live Demo
 
 You can check out a live demo of the application [here](https://your-livesite-link.com).
 
+
 ---
+
 
 ## 🛠️ Features
 
 - **User Authentication**: Implemented secure **Login/Register** functionality with **Flask-Login** session management.
+
 - **CRUD Operations**: Allows users to **Create, Read, Update, and Delete** to manage Pokémons, utilizing PokeAPI.
+
 - **Restful API**:  The application uses a full **RESTful API** (PokeAPI) to handle all data interactions. This ensures that the *front-end* communicates with the *back-end* using **HTTP** methods **(GET, POST, PUT, DELETE)** to manage resources.
+
 - **Database Management**: The application uses **PostgreSQL** for reliable data storage.
+
 - **Responsive Design**: Can be used for both desktop and mobile devices.
 
----
 
 ## 🗄️ PostgreSQL Integration
 
