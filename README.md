@@ -12,11 +12,10 @@ This is a simple, yet complete, full-stack web application built in **Flask/Pyth
 <p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white" /> </p>
 
 <br>
-<br>
 
 ## 🚀 Live Demo
 
-You can check out a the application [here](https://pokepy-crud-production.up.railway.app/).
+You can check out the application [here](https://pokepy-crud-production.up.railway.app/).
 <br>
 <br>
 <br>
@@ -35,10 +34,13 @@ You can check out a the application [here](https://pokepy-crud-production.up.rai
 
 - **Responsive Design**: Can be used for both desktop and mobile devices.
 
+<br>
 
 ## 🗄️ PostgreSQL Integration
 
 This application uses **PostgreSQL** as the relational database management system to store and manage data.
+
+<br>
 
 ### 🛠️ Database Schema
 
