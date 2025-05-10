@@ -40,8 +40,6 @@ You can check out the application [here](https://pokepy-crud-production.up.railw
 
 This application uses **PostgreSQL** as the relational database management system to store and manage data.
 
-<br>
-
 ### 🛠️ Database Schema
 
 The application follows best practices for database design by organizing data into two well-defined tables. The schema is optimized for performance, data integrity, and maintainability.
@@ -72,7 +70,7 @@ This table manages the Pokémon collected by each user. It includes:
 
     - added_at (DateTime) — Timestamp of when the Pokémon was added to the user's collection (defaults to the current time).
 
+
 Both tables are designed with referential integrity, ensuring that relationships between tables are enforced via foreign keys (where applicable). This ensures the consistency and reliability of data across the application.
-<br>
 <br>
 <br>
