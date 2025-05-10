@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Pokepy Dashboard{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">{% endblock %}
+{% block content %}
+    <button onclick="randomPokemon()" class="fixed-random-button">⟳</button>
+
+    <header class="header-section">
+        <div>
+            
+            {% if current_user.gender == True %}
+            <img src="{{ url_for('static', filename='img/poke-avatar-men.gif') }}" alt="Gif animado" class="avatar">
+            {% else %}
+            <img src="{{ url_for('static', filename='img/poke-avatar-girl.gif') }}" alt="Gif animado" class="avatar">
+            {% endif %}
+            <div class="user-info">
+                <p>{% if current_user.gender == True %}🙋‍♂️{% else %}🙋‍♀️{% endif %} {{ current_user.username }}</p>
+            </div>
+            <a href="{{ url_for('logout') }}" class="btn-logout">↩ Logout</a>
+       
+        </div>
+
+        <div>
+            
+            <form method="POST" id="cardForm">
+                <input type="text" name="pokemon-value" placeholder="Digite um pokémon!" id="cardInput" required>
+                <input type="submit" value="Catch!">
+            </form>
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="clearPokemon()" class="clear-button">Clear</button>
+                <button onclick="randomPokemon()" class="random-button">⟳ Random Catch</button>
+            </div>
+        
+        </div>
+    </header>
+    <main class="main-section">
+        <div id="cardContainer" class="card-container">
+            
+            {% for pokemon in pokemons_card %}
+            <div class="card" id="card-{{ pokemon.id }}">
+                
+                <h2>{{ pokemon.name|capitalize }}</h2>
+                <img src="{{ pokemon.sprite }}" alt="{{ pokemon.name }}">
+                
+                <div class="poke-info">
+                    <div>
+                        <p>Height: {{ pokemon.height / 10 }} m</p>
+                        <p>Weight: {{ pokemon.weight / 10 }} kg</p>
+                        <p class="types">
+                            {% for pokemon in pokemon.types %}
+                            <img src="{{ pokemon }}" alt="Pokemon-Type">
+                            {% endfor %}
+                        </p>
+                    </div>
+                    <button onclick="deletePokemon({{ pokemon.id }})" class="delete-button">delete</button>
+                </div>
+            
+            </div>
+            {% endfor %}
+
+        </div>         
+    </main>
+{% endblock %}

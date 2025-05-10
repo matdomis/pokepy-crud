@@ -1,0 +1,19 @@
+<div class="card" id="card-{{ pokemon.id }}">
+    <h2>{{ pokemon.name|capitalize }}</h2>
+    <img src="{{ pokemon.sprite }}" alt="{{ pokemon.name }}">
+    
+    <div class="poke-info">
+
+        
+        <div>
+            <p>Height: {{ pokemon.height / 10 }} m</p>
+            <p>Weight: {{ pokemon.weight / 10 }} kg</p>
+            <p class="types">{% for pokemon in pokemon.types %}
+                
+                <img src="{{ pokemon }}" alt="Pokemon-Type">
+                {% endfor %}
+            </p>
+        </div>
+        <button onclick="deletePokemon({{ pokemon.id }})" class="delete-button">delete</button>
+    </div>
+</div>

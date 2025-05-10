@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Pokepy Login{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">{% endblock %}
+{% block content %}
+    <div class="login-card">
+        <div class="login-header">
+            <p>Developed by @matdomis</p>
+            <img src="{{ url_for('static', filename='img/gif-pokeball.gif') }}" alt="Header Image">
+            <h1>Login</h1>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div id="flash-message">
+                        {% for msg in messages %}
+                            <p>{{msg}}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+        </div>
+       
+        <hr>
+        
+        <div class="login-body">
+
+            <form method="POST" id="loginForm" action="{{ url_for('login') }}">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter your username" class='login-input' required>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password" class='login-input' required>
+            </form>
+            
+            <div>
+                <a href="{{ url_for('signup') }}">Create Account</a>
+                <button type="submit" form="loginForm">👉 Login</button>
+                
+            </div>
+       
+        </div>
+    </div>
+{% endblock %}
