@@ -3,14 +3,18 @@
 
 This is a simple, yet complete, full-stack web application built in **Flask/Python** that demonstrates all the **CRUD** (Create, Read, Update, Delete) operations, integrated with **PokeAPI** (a RESTful API) and a secure **Login/Register system** designed with industry best practices.
 
+![Application Image](https://i.imgur.com/1cpg5jh.png)
+
+
+<p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> </p>
+
 
 ## 🚀 Live Demo
 
-You can check out a live demo of the application [here](https://your-livesite-link.com).
+You can check out a the application [here](https://your-livesite-link.com).
 
 
----
-
+----
 
 ## 🛠️ Features
 
@@ -27,22 +31,36 @@ You can check out a live demo of the application [here](https://your-livesite-li
 
 ## 🗄️ PostgreSQL Integration
 
-This application uses **PostgreSQL** as the relational database management system to store and manage application data. PostgreSQL was chosen for its robustness, scalability, and support for complex queries and transactions.
+This application uses **PostgreSQL** as the relational database management system to store and manage data.
 
 ### 🛠️ Database Schema
 
-The application follows best practices for database design by organizing data into **two well-defined tables**. The schema is optimized for performance, data integrity, and maintainability.
+The application follows best practices for database design by organizing data into two well-defined tables. The schema is optimized for performance, data integrity, and maintainability.
 
-- **Table 1:** *[Table Name]*  
-  This table is responsible for [brief description of its purpose]. It contains columns such as:
-  - `id` (Primary Key)
-  - `[Column 1]` (Data Type) — [brief description of column]
-  - `[Column 2]` (Data Type) — [brief description of column]
-  
-- **Table 2:** *[Table Name]*  
-  This table manages [brief description of its purpose]. It includes:
-  - `id` (Primary Key)
-  - `[Column 1]` (Data Type) — [brief description of column]
-  - `[Column 2]` (Data Type) — [brief description of column]
+- Table 1: users
 
-Both tables are designed with **referential integrity**, ensuring that relationships between tables are enforced via **foreign keys** (where applicable). This ensures the consistency and reliability of data across the application.
+This table is responsible for managing registered users of the application. It contains columns such as:
+
+    - uid (Integer, Primary Key) — A unique identifier for each user.
+
+    - username (String, Unique, Not Null) — The login name chosen by the user.
+
+    - password (String, Not Null) — A securely hashed password.
+
+    - gender (Boolean, Not Null) — Gender of the user (True for male, False for female).
+
+    - created_at (DateTime) — Timestamp of when the user was created (defaults to the current time).
+
+- Table 2: pokemons
+
+This table manages the Pokémon collected by each user. It includes:
+
+    - id (Integer, Primary Key) — A unique identifier for each Pokémon entry.
+
+    - pokemon_name (String, Not Null) — The name of the Pokémon.
+
+    - user_id (Integer, Foreign Key) — References users.uid; identifies the owner of the Pokémon.
+
+    - added_at (DateTime) — Timestamp of when the Pokémon was added to the user's collection (defaults to the current time).
+
+Both tables are designed with referential integrity, ensuring that relationships between tables are enforced via foreign keys (where applicable). This ensures the consistency and reliability of data across the application.
