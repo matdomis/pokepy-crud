@@ -2,19 +2,26 @@
 ---
 
 This is a simple, yet complete, full-stack web application built in **Flask/Python** that demonstrates all the **CRUD** (Create, Read, Update, Delete) operations, integrated with **PokeAPI** (a RESTful API) and a secure **Login/Register system** designed with industry best practices.
+
 <br>
+<br>
+<br>
+
 ![Application Image](https://i.imgur.com/1cpg5jh.png)
 
 <br>
+
 <p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> </p>
 
+<br>
+<br>
 
 ## 🚀 Live Demo
 
 You can check out a the application [here](https://pokepy-crud-production.up.railway.app/).
 <br>
 <br>
-<br>
+
 ----
 
 ## 🛠️ Features
