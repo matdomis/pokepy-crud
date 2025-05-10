@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --color-font: rgb(19, 100, 3);
+    --color-font-hover: rgb(13, 68, 2);
+}
+
+html, body {
+    background-color: #0A1F44;
+}
+
+
+.header-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding-top: 50px;
+}
+
+.avatar {
+    width: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.header-section div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.header-section .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.header-section .user-info p {
+    height: 20px;
+    text-align: center;
+    display: flex;
+    color: white;
+
+    font-weight: bold;
+
+
+}
+
+.header-section .user-info img {
+    width: 40px;
+}
+
+.clear-button {
+    padding: 6px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #4caf50, #2e7d32); /* Gradiente verde */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Winky Rough", sans-serif;
+}
+
+.clear-button:hover {
+    background: linear-gradient(90deg, #2e7d32, #4caf50); /* Inverte o gradiente no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+.clear-button:active {
+    background: linear-gradient(90deg, #1b5e20, #2e7d32); /* Gradiente mais escuro ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset; /* Sombra interna */
+    transform: scale(0.98); /* Efeito de "pressionado" */
+}
+
+
+.random-button {
+    padding: 6px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #e70606, #580202);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1rem;
+}
+
+.random-button:hover {
+    background: linear-gradient(270deg, #e70606, #0c0000);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.random-button:active {
+    background: linear-gradient(90deg, #003f7f, #002a5c);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+    transform: scale(0.98);
+}
+
+.fixed-random-button {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da borda direita da tela */
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, #e70606, #580202); /* Gradiente no fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 50%; /* Torna o botão circular */
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique sobre outros elementos da página */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    transition: all 0.3s ease; /* Animação suave para interações */
+    font-family: "Winky Rough", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de hover para o botão */
+.fixed-random-button:hover {
+    background: linear-gradient(270deg, #e70606, #0c0000); /* Gradiente invertido no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+/* Estilo ao clicar */
+.fixed-random-button:active {
+    background: linear-gradient(90deg, #003f7f, #002a5c); /* Gradiente mais escuro ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset; /* Sombra interna */
+    transform: scale(0.98); /* Efeito de "pressionado" */
+}
+
+
+
+
+.btn-logout {
+    padding: 3px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100px;
+
+    color: white;
+    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Gradiente vibrante */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    font-family: "Winky Rough", sans-serif;
+}
+
+.btn-logout:hover {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Inverte o gradiente no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+.btn-logout:active {
+    background: linear-gradient(90deg, #d32f2f, #b71c1c); /* Gradiente mais escuro ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset; /* Sombra interna */
+    transform: scale(0.98); /* Efeito de "pressionado" */
+}
+
+
+/* ----------- Estilo para os inputs ----------*/
+
+
+input[type="text"] {
+    width: 50vw;
+    height: 80px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    outline: none; 
+    transition: all 0.3s ease; 
+
+    font-size: 2rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: 400; /* Espessura da fonte */
+    color: #333; /* Cor do texto */
+    text-align: left; /* Alinhamento do texto */
+    font-family: "Winky Rough", sans-serif;
+}
+
+input[type="text"]:focus {
+    border-color: #af0707; /* Cor da borda ao focar ou passar o mouse */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra azul */
+}
+
+input[type="submit"] {
+    width: auto; /* Ajusta a largura automaticamente */
+    padding: 12px 20px; /* Espaçamento interno */
+    margin: 10px; /* Espaçamento externo */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    color: white; /* Cor do texto */
+    background: linear-gradient(90deg, #e70606, #580202); /* Gradiente no fundo */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: all 0.3s ease; /* Animação suave para interações */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+
+    font-family: "Winky Rough", sans-serif;
+    font-size: 2rem;
+}
+
+/* Efeito ao passar o mouse */
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #e70606, #0c0000); 
+    background: linear-gradient(270deg, #e70606, #0c0000); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Efeito ao clicar */
+input[type="submit"]:active {
+    background: linear-gradient(90deg, #003f7f, #002a5c); /* Gradiente ainda mais escuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset; /* Sombra interna */
+    transform: scale(0.98); /* Efeito de "pressionado" */
+}
+
+/* ---------------------------------*/
+
+.main-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 16px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 80vw;
+
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 12px);
+    max-width: calc(25% - 12px);
+    height: 600px;
+    background: linear-gradient(180deg, #c0c0c0, #f2f2f2); /* Gradiente suave de branco para cinza claro */
+    border: 4px solid #333; /* Borda mais escura para um toque moderno */
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: background 2s ease, box-shadow 2s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    background: linear-gradient(145deg, #6e6e6e, #6f6f6f); /* Gradiente um pouco mais claro para o hover */
+    box-shadow: 0 8px 24px rgba(248, 248, 248, 1);
+    transform: translateY(-15px);
+}
+
+.card-img {
+    height: 300px;
+    background-color: orange;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    font-family: "Winky Rough", sans-serif;
+    color: black; /* Cor vibrante */
+    text-shadow: 2px 2px 4px rgba(2, 7, 77, 0.5); /* Sombra para destaque */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.card:hover h2 {
+    color: #ff416c; /* Cor alterada no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+.card div.poke-info {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30%; */
+
+    height: 100%;
+}
+
+.card div.poke-info p.types img {
+    margin-top: 10px;
+    height: 25px;
+    width: 35px;
+
+}
+
+.card div.poke-info .delete-button {
+    justify-self: center;
+    align-self: center;
+    width: auto;
+    margin-top: auto;
+
+    color: white;
+    background-color: red;
+}
+
+.card div.poke-info .delete-button:hover {
+    background-color: darkred; /* Cor mais escura para indicar perigo */
+    color: white; /* Mantém o texto branco */
+    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destaque */
+    cursor: pointer; /* Mostra o cursor de mão */
+    transition: all 0.3s ease; /* Transição suave */
+}
+

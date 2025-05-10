@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    --color-font: rgb(19, 100, 3);
+    --color-font-hover: rgb(13, 68, 2);
+}
+
+body {
+    background-image: url("img/pokemons-cute.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Estilo do card de login */
+.login-card {
+    width: 400px;
+    max-width: 30vw;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid var(--color-font);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'National Park', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: var(--color-font);
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.login-header img {
+    width: 100px;
+}
+
+.login-header h1 {
+    border-bottom: solid 2px var(--color-font);
+    font-size: 32px;
+}
+
+/* Corpo do card */
+
+.login-body {
+    padding: 20px;
+}
+
+.login-body h2 {
+    margin-bottom: 20px;
+    color: #0A1F44;
+    font-size: 1.5rem;
+}
+
+.login-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-body label,
+.login-body p {
+    font-weight: bold;
+}
+
+.login-body .login-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+    transition: border 0.2s ease;
+}
+
+.login-body .login-input:focus {
+    border: 1.5px solid green;
+}
+
+.login-body div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-body .gender-selection img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+        transform: scale(1.25);
+        border: 5px solid var(--color-font);
+        outline: 2px;
+    }
+}
+
+.gender-selection img.selected {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-font-hover);
+    outline: 5px solid var(--color-font);
+    outline-offset: 4px;
+}
+
+.gender-selection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-body a {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--color-font);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.login-body a:hover {
+    background-color: var(--color-font-hover);
+}
+
+.login-body button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--color-font);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-body button:hover {
+    background-color: var(--color-font-hover);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .login-card {
+        max-width: 90vw;
+
+    }
+}
