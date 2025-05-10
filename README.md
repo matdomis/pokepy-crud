@@ -4,14 +4,12 @@
 This is a simple, yet complete, full-stack web application built in **Flask/Python** that demonstrates all the **CRUD** (Create, Read, Update, Delete) operations, integrated with **PokeAPI** (a RESTful API) and a secure **Login/Register system** designed with industry best practices.
 
 <br>
-<br>
-<br>
 
 ![Application Image](https://i.imgur.com/1cpg5jh.png)
 
 <br>
 
-<p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Railway-000000?style=for-the-badge&logo=railway&logoColor=white" /> </p>
 
 <br>
 <br>
@@ -19,6 +17,7 @@ This is a simple, yet complete, full-stack web application built in **Flask/Pyth
 ## 🚀 Live Demo
 
 You can check out a the application [here](https://pokepy-crud-production.up.railway.app/).
+<br>
 <br>
 <br>
 
@@ -72,3 +71,6 @@ This table manages the Pokémon collected by each user. It includes:
     - added_at (DateTime) — Timestamp of when the Pokémon was added to the user's collection (defaults to the current time).
 
 Both tables are designed with referential integrity, ensuring that relationships between tables are enforced via foreign keys (where applicable). This ensures the consistency and reliability of data across the application.
+<br>
+<br>
+<br>
