@@ -18,7 +18,6 @@ This is a simple, yet complete, full-stack web application built in **Flask/Pyth
 You can check out the application [here](https://pokepy-crud-production.up.railway.app/).
 <br>
 <br>
-<br>
 
 ----
 
