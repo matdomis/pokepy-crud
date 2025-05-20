@@ -1,4 +1,4 @@
-# 👾 Pokepy
+# # <p align="center"> 👾 Pokepy 👾 </p>
 ---
 
 This is a simple, yet complete, full-stack web application built in **Flask/Python** that demonstrates all the **CRUD** (Create, Read, Update, Delete) operations, integrated with **PokeAPI** (a RESTful API) and a secure **Login/Register system** designed with industry best practices.
